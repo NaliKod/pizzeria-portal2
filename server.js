@@ -29,7 +29,7 @@ server.use(function(req, res, next) {
   if (api && api.length > 1) {
     req.url = api[1] || '/';
   } else {
-    req.url = '/front' + req.url;
+    req.url = '/frontend' + req.url;
   }
   next();
 });
